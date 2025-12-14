@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <base href="https://fenix.com/" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="متجر فنيكس يقدم خدمات رشق تيك توك وبيع حسابات نتفليكس بأسعار مناسبة وتسليم سريع داخل سلطنة عمان." />
+    <title>متجر فنيكس | رشق تيك توك وحسابات نتفليكس</title>
+    <style>
+        :root{ --primary:#0b2545; --accent:#ff3b5c; --card:#fff; --bg:#f7fbff }
+        *{box-sizing:border-box}
+        body{font-family:'Segoe UI',Tahoma,Arial,sans-serif;margin:0;background:var(--bg);color:#111}
+        header{background:linear-gradient(90deg,var(--accent),#3a86ff);color:#fff;padding:26px;text-align:center}
+        .topnav{background:var(--primary);display:flex;gap:10px;padding:10px 16px;justify-content:center;flex-wrap:wrap}
+        .topnav a{color:#fff;text-decoration:none;padding:8px 12px;border-radius:8px;font-weight:600}
+        .topnav a:hover{background:rgba(255,255,255,.08)}
+        .layout{display:grid;grid-template-columns:260px 1fr;gap:20px;max-width:1200px;margin:20px auto;padding:0 16px}
+        .sidebar{padding:16px;border-radius:12px;transition:background .6s;background:linear-gradient(180deg,#ffe5e5,#fff6e6);box-shadow:0 8px 20px rgba(0,0,0,.06)}
+        .content{padding:20px;background:var(--card);border-radius:12px;box-shadow:0 8px 20px rgba(8,30,63,.06)}
+        .section{margin-bottom:24px}
+        .page-title{font-size:20px;color:var(--primary);margin-bottom:6px}
+        .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+        .card{border:1px solid #e6eef9;border-radius:12px;padding:14px}
+        .price{font-size:20px;font-weight:800;color:#0b2545}
+        .btn{display:inline-block;margin-top:8px;padding:8px 12px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700}
+        table{width:100%;border-collapse:collapse;margin-top:12px}
+        th,td{border:1px solid #e6eef9;padding:10px;text-align:center}
+        hr{border:0;height:1px;background:linear-gradient(90deg,transparent,#ccc,transparent);margin:18px 0}
+        .footer{text-align:center;padding:16px;margin-top:20px;color:#fff;background:linear-gradient(90deg,#3a86ff,#ff3b5c);border-radius:8px}
+        @media (max-width:900px){.layout{grid-template-columns:1fr}}
+    </style>
+</head>
+<body>
+<header>
+    <h1>متجر فنيكس</h1>
+    <p>بيع رشق تيك توك وبيع حسابات نتفليكس بأسعار مميزة</p>
+</header>
+<nav class="topnav">
+    <a href="#home">الرئيسية</a>
+    <a href="#tiktok">رشق تيك توك</a>
+    <a href="#netflix">حسابات نتفليكس</a>
+    <a href="#pricing">الأسعار</a>
+    <a href="#contact">تواصل</a>
+</nav>
+<div class="layout">
+    <aside class="sidebar" id="sidebar">
+        <h3>الأقسام</h3>
+        <ul>
+            <li><a href="#tiktok">🔹 خدمات تيك توك</a></li>
+            <li><a href="#netflix">🔹 حسابات نتفليكس</a></li>
+            <li><a href="#pricing">🔹 جدول الأسعار</a></li>
+        </ul>
+        <hr />
+        <p>تغيير ألوان الشريط الجانبي تلقائياً</p>
+        <button id="toggleColors" class="btn">إيقاف / تشغيل</button>
+    </aside>
+
+    <main class="content">
+        <section id="home" class="section">
+            <div class="page-title">الصفحة: الرئيسية</div>
+            <h2>مرحباً بك</h2>
+            <p>نوفر خدمات رقمية سريعة وآمنة لدعم حسابك على تيك توك، إضافة إلى حسابات نتفليكس جاهزة.</p>
+            <ol>
+                <li>تسليم سريع</li>
+                <li>دعم فني</li>
+                <li>أسعار منافسة</li>
+            </ol>
+            <hr />
+        </section>
+
+        <section id="tiktok" class="section">
+            <div class="page-title">الصفحة: رشق تيك توك</div>
+            <div class="cards">
+                <div class="card"><h3>مشاهدات</h3><p>زيادة مشاهدات الفيديو</p><div class="price">1000 مشاهدة = نصف ريال</div><a class="btn" href="#contact">اطلب الآن</a></div>
+                <div class="card"><h3>لايكات</h3><p>تعزيز التفاعل</p><div class="price">500 لايك = نصف ريال</div><a class="btn" href="#contact">اطلب الآن</a></div>
+                <div class="card"><h3>متابعين</h3><p>زيادة عدد المتابعين</p><div class="price">100 متابع = 5 ريال</div><a class="btn" href="#contact">اطلب الآن</a></div>
+            </div>
+            <hr />
+        </section>
+
+        <section id="netflix" class="section">
+            <div class="page-title">الصفحة: حسابات نتفليكس</div>
+            <div class="cards">
+                <div class="card"><h3>حساب شهر</h3><p>جودة عالية</p><div class="price">2 ريال</div><a class="btn" href="#contact">شراء</a></div>
+                <div class="card"><h3>حساب 3 أشهر</h3><p>سعر أوفر</p><div class="price">5 ريال ونصف</div><a class="btn" href="#contact">شراء</a></div>
+            </div>
+            <hr />
+        </section>
+
+        <section id="pricing" class="section">
+            <div class="page-title">الصفحة: جدول الأسعار</div>
+            <table>
+                <thead><tr><th>الخدمة</th><th>المدة</th><th>السعر (بالريال العُماني)</th></tr></thead>
+                <tbody>
+                    <tr><td>مشاهدات تيك توك</td><td>فوري</td><td>1000 مشاهدة = نصف ريال</td></tr>
+                    <tr><td>لايكات تيك توك</td><td>فوري</td><td>500 لايك = نصف ريال</td></tr>
+                    <tr><td>حساب نتفليكس</td><td>شهر</td><td>2 ريال</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="page-title">الصفحة: تواصل</div>
+            <h2>تواصل معنا مباشرة</h2>
+            <p>يمكنك التواصل معنا بسهولة عبر الأزرار التالية:</p>
+            <div style="display:flex;gap:12px;flex-wrap:wrap">
+                <a class="btn" href="https://wa.me/94140037" target="_blank">📱 تواصل واتساب</a>
+                <a class="btn" href="https://www.instagram.com/s2i1f" target="_blank" style="background:#833ab4">📸 تواصل انستغرام</a>
+            </div>
+            <hr />
+            <ul>
+                <li>واتساب: 94140037</li>
+                <li>انستغرام: s2i1f</li>
+            </ul>
+        </section>
+
+        <div class="footer">© 2025 متجر فنيكس</div>
+    </main>
+</div>
+<script>
+const sidebar=document.getElementById('sidebar');
+const toggle=document.getElementById('toggleColors');
+const colors=['linear-gradient(180deg,#ffe5e5,#fff6e6)','linear-gradient(180deg,#e6fff4,#e6f7ff)','linear-gradient(180deg,#fff0e6,#fff6f0)','linear-gradient(180deg,#f0e6ff,#f6f0ff)'];
+let i=0,run=true;
+let t=setInterval(()=>{ if(!run) return; i=(i+1)%colors.length; sidebar.style.background=colors[i]; },2000);
+toggle.onclick=()=>{ run=!run; if(!run) clearInterval(t); else t=setInterval(()=>{ i=(i+1)%colors.length; sidebar.style.background=colors[i]; },2000); };
+</script>
+</body>
+</html>
+
